@@ -6,6 +6,12 @@ import {
 import {sumTime} from './helper';
 
 export = (app: Application) => {
+  const router = app.route('/cron');
+  router.get('/job', (_: unknown, res: any) => {
+    res.end('working');
+  });
+
+
   app.on('pull_request.closed', async context => {
     const pullRequest: {
       head: PullRequestRef;
