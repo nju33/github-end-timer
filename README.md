@@ -1,26 +1,12 @@
-# working-hours
+# github-end-timer
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that A Probot app
+[![video on youtube](https://i.ytimg.com/vi/C1foSpN773E/hqdefault.jpg)](https://www.youtube.com/watch?v=C1foSpN773E)
 
-## Setup
+## Install
 
-```sh
-# Install dependencies
-npm install
+can install from [here](https://github.com/apps/end-timer)
 
-# Run typescript
-npm run build
+## Commit Message
 
-# Run the bot
-npm start
-```
-
-## Contributing
-
-If you have suggestions for how working-hours could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
-
-For more, check out the [Contributing Guide](CONTRIBUTING.md).
-
-## License
-
-[ISC](LICENSE) © 2019 nju33 <nju33.ki@gmail.com>
+`[wt \d]`をコミットメッセージに含めてください。（`wt`は「Working Time」の略です）  
+プルリクがマージまたはクローズされた時、そのプルリクの`base..head`間のコミットのメッセージをすべて読んで`wt`の時間を集計します。そして、`bot`でコメントします。

@@ -1,7 +1,7 @@
 import {Application} from 'probot';
 import {
   PullRequestRef,
-  PullRequestCommitCompareResult
+  PullRequestCommitCompareResult,
 } from './types/pull-request';
 import {sumTime} from './helper';
 
@@ -11,25 +11,24 @@ export = (app: Application) => {
     res.end('working');
   });
 
-
   app.on('pull_request.closed', async context => {
     const pullRequest: {
       head: PullRequestRef;
       base: PullRequestRef;
     } = {
       head: context.payload.pull_request.head,
-      base: context.payload.pull_request.base
+      base: context.payload.pull_request.base,
     };
 
     const {
-      data
+      data,
     }: {
       data: PullRequestCommitCompareResult;
     } = await context.github.repos.compareCommits(
       context.repo({
         head: pullRequest.head.sha,
-        base: pullRequest.base.sha
-      })
+        base: pullRequest.base.sha,
+      }),
     );
 
     const time = sumTime(data.commits);
@@ -41,7 +40,7 @@ export = (app: Application) => {
     }
 
     const issueComment = context.issue({
-      body: `このプルリクの作業時間は **${timeStr}** です`
+      body: `このプルリクの作業時間は **${timeStr}** です`,
     });
     context.github.issues.createComment(issueComment);
   });
