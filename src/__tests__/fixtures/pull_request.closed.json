@@ -1,0 +1,19 @@
+{
+  "action": "closed",
+  "number": 111,
+  "pull_request": {
+    "number": 111,
+    "head": {
+      "sha": "head"
+    },
+    "base": {
+      "sha": "base"
+    }
+  },
+  "repository": {
+    "owner": {
+      "name": "nju33"
+    },
+    "name": "end-timer"
+  }
+}

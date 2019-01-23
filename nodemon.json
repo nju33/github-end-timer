@@ -1,0 +1,5 @@
+{
+  "watch": ["src"],
+  "ignore": ["src/**/*.test.ts"],
+  "exec": "probot run ./index.js -p 3453 -W https://smee.io/GkFW9XcqxjlyZh"
+}

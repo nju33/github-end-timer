@@ -1,0 +1,48 @@
+{
+  "name": "end-timer",
+  "version": "0.0.0",
+  "description": "A Probot app",
+  "author": "nju33 <nju33.ki@gmail.com>",
+  "license": "ISC",
+  "repository": "https://github.com/nju33/end-timer.git",
+  "homepage": "https://github.com/nju33/end-timer",
+  "bugs": "https://github.com/nju33/end-timer/issues",
+  "keywords": [
+    "probot",
+    "github"
+  ],
+  "scripts": {
+    "prepare": "yarn build",
+    "build": "tsc -p tsconfig.json",
+    "dev": "nodemon",
+    "start": "probot run ./lib/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+  },
+  "dependencies": {
+    "@types/nock": "^9.3.0",
+    "nock": "^10.0.0",
+    "probot": "^7.2.0",
+    "pupa": "^1.0.0"
+  },
+  "devDependencies": {
+    "@nju33/prettier": "^0.0.6",
+    "@types/jest": "^23.1.5",
+    "@types/node": "^10.5.2",
+    "eslint-plugin-typescript": "^0.12.0",
+    "jest": "^23.4.0",
+    "nodemon": "^1.17.2",
+    "prettier": "^1.16.1",
+    "smee-client": "^1.0.2",
+    "ts-jest": "^23.0.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^2.9.2",
+    "typescript-eslint-parser": "^18.0.0"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
