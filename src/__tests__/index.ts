@@ -30,7 +30,7 @@ describe('End Timer', () => {
           },
           {
             commit: {
-              message: 'test [wt 2.3]'
+              message: 'test [et 2.3]'
             }
           }
         ]
@@ -38,7 +38,7 @@ describe('End Timer', () => {
 
     nock('https://api.github.com')
       .post(/repos\/.+\/issues/, (body: {body: string}) => {
-        expect(body.body).toMatch(/このプルリクの作業時間は.+です/);
+        expect(body.body).toMatch(/このプルリクの作業時間は \*\*5時間36分\*\* です/);
 
         done();
         return true;

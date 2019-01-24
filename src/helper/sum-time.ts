@@ -1,6 +1,6 @@
 import {PullRequestCommit} from '../types/pull-request';
 
-const re = /\[wt\s+([.\d]+)\]/;
+const re = /\[[ew]t\s+([.\d]+)\]/;
 export const getTime = (message: string) => {
   const matches = message.match(re);
 

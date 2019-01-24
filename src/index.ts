@@ -7,7 +7,7 @@ import {sumTime} from './helper';
 
 export = (app: Application) => {
   const router = app.route('/cron');
-  router.get('/job', (_: unknown, res: any) => {
+  router.get('/job', (_: any, res: any) => {
     res.end('working');
   });
 
@@ -36,7 +36,7 @@ export = (app: Application) => {
     if (time < 1) {
       timeStr = `${time}分`;
     } else {
-      timeStr = `${Math.floor(time)}時${Math.ceil(60 * (time % 1))}分`;
+      timeStr = `${Math.floor(time)}時間${Math.ceil(60 * (time % 1))}分`;
     }
 
     const issueComment = context.issue({
