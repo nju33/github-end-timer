@@ -16,3 +16,6 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: yarn test
+      - run: |
+          git remote add glitch $GLITCH_URL
+          git push --force glitch master
