@@ -1,5 +1,7 @@
 # github-end-timer
 
+[![CircleCI](https://circleci.com/gh/nju33/github-end-timer.svg?style=svg)](https://circleci.com/gh/nju33/github-end-timer)
+
 [![video on youtube](https://i.ytimg.com/vi/C1foSpN773E/hqdefault.jpg)](https://www.youtube.com/watch?v=C1foSpN773E)
 
 ## Install
