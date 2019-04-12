@@ -32,7 +32,7 @@
     "eslint-plugin-typescript": "0.14.0",
     "jest": "23.6.0",
     "nodemon": "1.18.11",
-    "prettier": "1.16.4",
+    "prettier": "1.17.0",
     "renovate-config-nju33": "0.0.1",
     "smee-client": "1.1.0",
     "ts-jest": "23.10.5",
