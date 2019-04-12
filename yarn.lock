@@ -38,12 +38,11 @@
     universal-user-agent "^2.0.0"
     url-template "^2.0.8"
 
-"@octokit/webhooks@^5.0.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@octokit/webhooks/-/webhooks-5.1.2.tgz#353bb12898a1035fd35af18237a90fc9cbe4ac55"
-  integrity sha512-69DqMttU9EtwydKpvItAdRhIry07g2NuEVYFIyLgTtRh39cJBYJK07/cQFcvl1smwgQvEST3xiObvdRzjFVyAA==
+"@octokit/webhooks@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@octokit/webhooks/-/webhooks-6.0.1.tgz#326e24030fc20d2f21feb719da21299877635435"
+  integrity sha512-6xf1lOtq16BJpJ0EclN0IDdmq3jtzTHq7C/nm04Hx9ilqWurmyuwCaoxqTDU45qFXu5j5K/LRwSyWkr7iUg2Fg==
   dependencies:
-    buffer-equal-constant-time "^1.0.1"
     debug "^4.0.0"
 
 "@types/jest@23.3.14":
@@ -627,7 +626,7 @@ btoa-lite@^1.0.0:
   resolved "https://registry.yarnpkg.com/btoa-lite/-/btoa-lite-1.0.0.tgz#337766da15801210fdd956c22e9c6891ab9d0337"
   integrity sha1-M3dm2hWAEhD92VbCLpxokaudAzc=
 
-buffer-equal-constant-time@1.0.1, buffer-equal-constant-time@^1.0.1:
+buffer-equal-constant-time@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz#f8e71132f7ffe6e01a5c9697a4c6f3e48d5cc819"
   integrity sha1-+OcRMvf/5uAaXJaXpMbz5I1cyBk=
@@ -2706,7 +2705,15 @@ js-tokens@^3.0.2:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
   integrity sha1-mGbfOVECEw449/mWvOtlRDIJwls=
 
-js-yaml@^3.7.0, js-yaml@^3.9.1:
+js-yaml@^3.13.1:
+  version "3.13.1"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
+  integrity sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^4.0.0"
+
+js-yaml@^3.7.0:
   version "3.12.1"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.1.tgz#295c8632a18a23e054cf5c9d3cecafe678167600"
   integrity sha512-um46hB9wNOKlwkHgiuyEVAybXBjwFUV0Z/RaHJblRd9DXltue9FTYvzCr9ErQrK9Adz5MU4gHWVaNUfdmrC8qA==
@@ -3789,13 +3796,13 @@ private@^0.1.8:
   resolved "https://registry.yarnpkg.com/private/-/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
   integrity sha512-VvivMrbvd2nKkiG38qjULzlc+4Vx4wm/whI9pQD35YrARNnhxeiRktSOhSukRLFNlzg6Br/cJPet5J/u19r/mg==
 
-probot@7.5.1:
-  version "7.5.1"
-  resolved "https://registry.yarnpkg.com/probot/-/probot-7.5.1.tgz#dc85f0f9bcc10d13c7d158f2e6356c7c33877738"
-  integrity sha512-nbIQYX30kS0uN3hchTMCm9W6U6o3dnigr6bEpyAPJITycBMAortiZZZpuz3NSWxJ3aysASM29YJTuq+N7Ztjzw==
+probot@7.5.3:
+  version "7.5.3"
+  resolved "https://registry.yarnpkg.com/probot/-/probot-7.5.3.tgz#419e9219a9ebab453adb272fed4eae7d4865b4c6"
+  integrity sha512-1ZMG3iy/daQbscFnQ8szzJYOqUvTpojdOzCCQce0Uh/TCY0YhPuT0WWSKWo5PQLJdQcOacxpiwMOn5KulZdG9g==
   dependencies:
     "@octokit/rest" "^15.18.0"
-    "@octokit/webhooks" "^5.0.2"
+    "@octokit/webhooks" "^6.0.1"
     "@types/supports-color" "^5.3.0"
     bottleneck "^2.8.0"
     bunyan "^1.8.12"
@@ -3808,7 +3815,7 @@ probot@7.5.1:
     express-async-errors "^3.0.0"
     hbs "^4.0.3"
     is-base64 "0.1.0"
-    js-yaml "^3.9.1"
+    js-yaml "^3.13.1"
     jsonwebtoken "^8.1.0"
     pkg-conf "^2.0.0"
     promise-events "^0.1.3"
