@@ -26,7 +26,7 @@
     "pupa": "1.0.0"
   },
   "devDependencies": {
-    "@nju33/prettier": "0.0.25",
+    "@nju33/prettier": "0.0.26",
     "@types/jest": "23.3.14",
     "@types/node": "10.14.7",
     "eslint-plugin-typescript": "0.14.0",
